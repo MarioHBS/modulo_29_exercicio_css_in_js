@@ -1,13 +1,20 @@
-import styles from './Hero.module.css'
+import { Container } from '../../global_style'
+import HeroForm from './styles'
+
+export type Props = {
+  background: string
+}
 
 const Hero = () => (
-  <form className={styles.form}>
-    <div className="container">
-      <h2 className={styles.heroTitle}>
-        As melhores vagas para tecnologia, design e artes visuais.
-      </h2>
-    </div>
-  </form>
+  <HeroForm
+    background={
+      'https://cdn.pixabay.com/photo/2018/08/10/15/45/woman-3597101_1280.jpg'
+    }
+  >
+    <Container>
+      <h2>As melhores vagas para tecnologia, design e artes visuais.</h2>
+    </Container>
+  </HeroForm>
 )
 
 export default Hero
