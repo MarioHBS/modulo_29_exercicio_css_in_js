@@ -25,7 +25,7 @@ const vagas = [
     modalidade: 'clt',
     salarioMin: 3000,
     salarioMax: 4500,
-    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery']
+    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const vagas = [
     modalidade: 'pj',
     salarioMin: 5000,
     salarioMax: 6500,
-    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery']
+    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const vagas = [
     modalidade: 'pj',
     salarioMin: 4000,
     salarioMax: 6000,
-    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery']
+    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ const vagas = [
     modalidade: 'clt',
     salarioMin: 4000,
     salarioMax: 5000,
-    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery']
+    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ const vagas = [
     modalidade: 'clt',
     salarioMin: 7000,
     salarioMax: 8000,
-    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery']
+    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ const vagas = [
     modalidade: 'pj',
     salarioMin: 12000,
     salarioMax: 15000,
-    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery']
+    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
   },
   {
     id: 7,
@@ -85,15 +85,15 @@ const vagas = [
     modalidade: 'clt',
     salarioMin: 4000,
     salarioMax: 5000,
-    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery']
-  }
+    requisitos: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
+  },
 ]
 
 const ListaVagas = () => {
   const [filtro, setFiltro] = useState<string>('')
 
   const vagasFiltradas = vagas.filter(
-    (x) => x.titulo.toLocaleLowerCase().search(filtro) >= 0
+    (x) => x.titulo.toLocaleLowerCase().search(filtro) >= 0,
   )
 
   return (
