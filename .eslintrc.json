@@ -18,18 +18,28 @@
     "plugins": [
       "react",
       "@typescript-eslint",
-      "react-hooks"
+      "react-hooks",
+      "simple-import-sort"
     ],
     "rules": {
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "react/prop-types": "off",
       "react/react-in-jsx-scope": "off",
-      "@typescript-eslint/explicit-module-boundary-types": "off"
+      "react/display-name": [0], //0 = off, 1 = warn, 2 = error
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "simple-import-sort/imports": "error",
+      "simple-import-sort/exports": "error"
     },
     "settings": {
       "react": {
         "version": "detect"
+      },
+      "import/resolver": {
+        "node": {
+          "paths": ["src"],
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
       }
     }
   }
